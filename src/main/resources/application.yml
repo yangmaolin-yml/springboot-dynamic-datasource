@@ -1,0 +1,15 @@
+server:
+  port: 8888
+  servlet:
+    context-path: /data
+spring:
+  profiles:
+    active:
+    - dev
+  
+
+
+#mybatis
+mybatis:
+  mapperLocations: classpath:mapper/*/*.xml
+  type-aliases-package: com.example.demo.pojo
